@@ -1,0 +1,11 @@
+Bool, sum type
+either True or False
+---
+data Bool = False | True
+
+
+tuple, product type
+must supply both arguments
+  to construct a value
+---
+data (,) a b = (,) a b
