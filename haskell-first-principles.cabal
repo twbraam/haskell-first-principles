@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6689fcbc42c09dbcdac6a383a0ca6ca3c2ceaf3a7f9b07aab8831917133b0061
+-- hash: 0d58c5c4801a6798add7eb8ee36275d8658f0faba75e70ca4ba9e259debdbfba
 
 name:           haskell-first-principles
 version:        0.1.0.0
@@ -42,7 +42,7 @@ executable haskell-first-principles-exe
       Paths_haskell_first_principles
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall
   build-depends:
       base >=4.7 && <5
     , haskell-first-principles
@@ -55,7 +55,7 @@ test-suite haskell-first-principles-test
       Paths_haskell_first_principles
   hs-source-dirs:
       test
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N 
   build-depends:
       base >=4.7 && <5
     , haskell-first-principles
