@@ -1,10 +1,10 @@
-module PatternMatchTuplehs where
+module PatternMatchTuples where
 
 fst' :: (a, b) -> a
-fst' (a, b) = a
+fst' (a, _) = a
 
 snd' :: (a, b) -> b
-snd' (a, b) = b
+snd' (_, b) = b
 
 
 
