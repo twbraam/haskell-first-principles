@@ -26,3 +26,12 @@ ar = scanr (+) 0 [1..5]
 el :: [Integer]
 el = scanl (+) 0 [1..5]
 -- [0,1,3,6,10,15]
+
+pab :: [String]
+pab = ["Pizza", "Apple", "Banana"]
+piz :: [Char]
+piz = foldr (\a b -> take 3 a) "" pab
+-- "Piz"
+ban :: [Char]
+ban = foldl (\b a -> take 3 a) "" pab
+-- "Ban"
