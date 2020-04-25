@@ -1,6 +1,5 @@
 module ExerciseChapter where
 import Data.Char
-import Data.List
 
 cipher :: String -> String -> String
 cipher input kw = map shift $zipped input kw
