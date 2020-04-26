@@ -1,0 +1,1 @@
+-- class Semigroup a => Monoid a where
